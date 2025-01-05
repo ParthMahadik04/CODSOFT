@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito",serif;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: url("bgimage.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    
+
+}
+
+nav{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    justify-content: space-between;
+    top: 0px;
+    padding: 10px 20px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.19),0 17px 50px 0 rgba(0,0,0,0.19);
+    z-index: 3;
+    background-color: black;
+    width: 100vw;
+}
+
+nav h1{
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+li{
+    margin: 15px;
+}
+
+li a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.blur{
+    backdrop-filter: blur(10px);
+    z-index: 1;
+    height: 71vh;
+    width: 100vw;
+}
+
+#home{
+    background-color: white;
+    height: 65vh;
+    margin: 40px;
+    padding: 50px;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 8px rgba(0,0.50,0.50,0.90),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#home h3{
+    font-size: 25px;
+    margin: 24px;
+}
+
+#home h1{
+    font-size: 35px;
+    margin: 24px;
+}
+
+.social-media{
+    margin: 24px;
+    font-size: 30px;
+}
+.social-media a{
+    margin-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+#home button{
+    height: 42px;
+    width: 159px;
+    border-radius: 20px;
+    font-size: 15px;
+    cursor: pointer;
+    /* margin: 12px; */
+    margin-left: 19px;
+}
+
+#parthimg{
+    height: 425px;
+    width: 500px;
+    animation: floatImage 4s ease-in-out infinite;
+    float: right;
+    position: absolute;
+    /* left: auto; */
+    top: 70px;
+    right: 141px;
+}
+
+@keyframes floatImage {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(-2.4rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+#about{
+    background-color: black;
+    height: 45vh;
+    width: 100vw;
+    color: white;
+    text-align: center;
+}
+
+#abouthead{
+    margin-top: 0px;
+    padding: 30px;
+}
+
+#about p{
+    margin: 25px;
+    font-size: 20px;
+}
+
+#skills{
+    background-image: url("bgimage2.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 58vh;
+    width: 100vw;
+}
+
+.skillblur{
+    height: 58vh;
+}
+
+#skillinfo{
+    background-color: white;
+    height: 45vh;
+    margin: 52px 100px 36px 23px;
+    padding: 198px;
+    padding-right: 69vw;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 8px rgba(0, 0.50, 0.50, 0.90), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+}
+
+.skillcontainer{
+    background-color: white;
+    height: 270px;
+    width: 140px;
+    top: 82px;
+    left: 75px;
+    padding: 99px;
+    border-radius: 13px;
+    box-shadow: 0 12px 16px 8px rgba(0, 0.50, 0.50, 0.90), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+}
+
+.sc2{
+    position: relative;
+    top: -115px;
+    left: 149px;
+}
+.sc3{
+    position: relative;
+    top: -385px;
+    left: 691px;
+}
+.sc4{
+    position: relative;
+    top: -655px;
+    left: 422px;
+}
+.sc5{
+    position: relative;
+    top: -925px;
+    left: 960px;
+}
+
+.skillcontainer img{
+    height: 150px;
+    width: 150px;
+    margin: -72px;
+    padding: 0px;
+}
+
+.blur h2{
+    top: 20px;
+    position: absolute;
+    margin: 49px;
+    padding: 0px;
+    z-index: 1;
+    font-size: 38px;
+}
+
+.skillcontainer p{
+    margin: -14px;
+    padding: 0px;
+    position: absolute;
+    top: 221px;
+    font-size: 25px;
+    left: 94px;
+    font-weight: bold;
+}
+
+#sp1{
+    margin-left: 1px;
+}
+
+#sp3 {
+    margin-left: -24px;
+}
+
+
+.experience{
+    min-height: 60vh;
+    padding: 1rem 9% 2rem;
+    background-color: black;
+    width: 100vw;
+}
+
+.nsc1{
+    position: relative;
+    top: 156px;
+}
+
+.nsc2{
+    position: relative;
+    left: 328px;
+    top: -115px;
+}
+
+.expcont{
+    height: 307px;
+    width: 285px;
+    background-color: rgb(172, 172, 172);
+    border-radius: 15px;
+    display: inline-flex;
+    margin: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.expcont p{
+    font-size: 21px;
+    margin-top: 49px;
+    margin-left: 26px;
+}
+
+#ep1{
+    font-weight: bold;
+    color: white;
+    margin-left: 16px;
+}
+
+#ep2{
+    font-weight: bold;
+    color: white;
+    margin-left: 44px;
+}
+
+#csimg{
+    height: 150px;
+    width: 280px;
+    margin-left: 8px;
+}
+#thimg{
+    height: 150px;
+    width: 280px;
+    margin-left: 8px;
+}
+
+.experience h2{
+    color: white;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#projects{
+    background-image: url("bgimage3.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 61vh;
+    width: 100vw;
+}
+
+.projectblur{
+    height: 61vh;
+}
+
+.projcont1 {
+    padding-left: 346px;
+    padding-top: 189px;
+    margin-left: -31px;
+}
+
+.projcont2 {
+    padding-left: 346px;
+    padding-top: 189px;
+    margin-left: 171px;
+}
+
+.projcont3 {
+    padding-left: 346px;
+    padding-top: 189px;
+    margin-left: 648px;
+    margin-top: -287px;
+}
+
+#projectinfo{
+    background-color: white;
+    height: 48vh;
+    margin: 52px 100px 36px 23px;
+    padding: 198px;
+    padding-right: 12vw;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 8px rgba(0, 0.50, 0.50, 0.90), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+}
+
+.t1 {
+    margin-top: -82px;
+    margin-left: -218px;
+}
+
+.t1 img {
+    height: 181px;
+    width: 333px;
+    border-radius: 15px;
+}
+
+.t1 p{
+    margin: 12px;
+}
+
+#p1{
+    margin-left: 44px;
+}
+
+#p2{
+    margin-left: 30px;
+}
+
+#p3{
+    margin-left: 75px;
+}
+
+#resume{
+    background-color: black;
+    height: 40vh;
+    width: 100vw;
+    color: white;
+}
+
+#resume h2{
+    text-align: center;
+    font-size: 40px;
+    padding: 30px;
+}
+
+#resume p{
+    text-align: center;
+    font-size: 40px;
+    padding: 24px;
+}
+
+#resume button{
+    height: 71px;
+    width: 171px;
+    border-radius: 12px;
+    font-size: 24px;
+    cursor: pointer;
+    
+}
+
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    
+}
+
+#contact{
+    background-image: url("bgimage4.jpg");
+    background-repeat: no-repeat;
+    background-size: 100vw 100vh;
+    height: 75vh;
+    width: 100vw;
+}
+
+.contactblur{
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactform{
+    background-color: white;
+    height: 64vh;
+    width: 40vw;
+    padding: 95px;
+    border-radius: 15px;
+    box-shadow: 0 12px 16px 8px rgba(0, 0.50, 0.50, 0.90), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+}
+
+
+.contactform form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+    margin-bottom: 3rem;
+    margin-top: -23px;
+}
+
+.contactform form .input-box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contactform form .input-box input,.contactform form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 18px;
+    border-radius: .8rem;
+    margin: .7rem 0;
+}
+
+.contactform form .input-box input {
+    width: 49%;
+}
+
+.contactform form textarea{
+    resize: none;
+}
+
+.contactform form .btn{
+    margin-top: 0rem;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-left: 155px;
+}
+
+.head{
+    display: flex;
+    justify-content: center;
+}
+
+#formhead{
+    margin-top: 0px;
+}
+
+
+footer{
+    background-color: black;
+    height: 30vh;
+    width: 100vw;
+    color: white;
+    margin: 0px;
+    padding: 20px;
+}
+
+footer div{
+    text-align: center;
+}
+
+footer ul li{
+    display: inline;
+}
+
+.sm2 a{
+    color: white;
+}
